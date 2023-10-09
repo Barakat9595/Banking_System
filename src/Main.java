@@ -29,10 +29,11 @@ public class Main {
         else
         {
             try {
-                throw new  IllegalArgumentException("you must enter your account details first");
+                throw new  IllegalArgumentException();
             }
             catch(IllegalArgumentException I)
             {
+               System.out.println("you must enter your account details first");
                System.out.println("Please enter your account number");
                 int accountNumber = scan.nextInt();
                 scan.nextLine();
